@@ -55,6 +55,6 @@ def main():
     ham7()
     ham8()
     ham9()
-    ham10
+    ham10()
 if __name__=="__main__":
     main()
