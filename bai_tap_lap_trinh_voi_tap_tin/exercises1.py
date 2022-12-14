@@ -5,6 +5,7 @@ def exercises1():
     ten_tap_tin = input("Ten tap tin la: ")
     f = open(ten_tap_tin, 'w')
     f.write(n)
+    f.close()
 def main():
     exercises1()
 if __name__=="__main__":
