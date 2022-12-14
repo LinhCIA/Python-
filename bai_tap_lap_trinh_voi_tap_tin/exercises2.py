@@ -4,7 +4,7 @@ def exercises2():
     #doc noi dung tap tin va in ra man hinh
     with open(ten_tap_tin, 'r', encoding='utf-8') as f:
         read = f.read()
-        print('doc tap tin:\n', read)
+     print('doc tap tin:\n', read)
 def main():
     exercises2()
 if __name__=="__main__":
