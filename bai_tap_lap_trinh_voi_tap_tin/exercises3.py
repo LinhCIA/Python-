@@ -6,6 +6,7 @@ def exercises3():
     #Ghi chuoi ki tu nay vao cuoi tap tin o tren
     with open(ten_tap_tin, "a", encoding='utf-8') as f:
         f.write(n)
+        f.close()
 def main():
     exercises3()
 if __name__=="__main__":
