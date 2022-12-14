@@ -2,18 +2,18 @@ from sinhvien1 import SinhVien
 import os
 import pickle
 
-def ghi_sinh_vien(ten_taptin: str, objs: list[SinhVien]):
+def ghi_sinh_vien(ten_tap_tin: str, objs: list[SinhVien]):
     try:
-        with open(os.path.join(ten_taptin), 'wb') as f:
+        with open(os.path.join(ten_tap_tin), 'wb') as f:
             pickle.dump(objs, f)
         print("Lưu thành công!")
     except Exception as e:
         print("Xảy ra lỗi trong file!")
         print(e)
 
-def doc_sinh_vien(ten_taptin: str) -> SinhVien:
+def doc_sinh_vien(ten_tap_tin: str) -> SinhVien:
     try:
-        with open(os.path.join(ten_taptin), 'rb') as f:
+        with open(os.path.join(ten_tap_tin), 'rb') as f:
             sv = pickle.load(f)
         return sv
     except Exception as e:
